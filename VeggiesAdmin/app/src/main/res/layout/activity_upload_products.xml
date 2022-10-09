@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.upload.UploadProductsActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="merge"
+        android:id="@+id/merge_btn"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/upload_all_photos_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photos"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/select_excel_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Excel"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Name"
+                android:id="@+id/txt_excel_file"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Photos"
+            android:background="@drawable/bg_btn_not_selected"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ll"
+            android:enabled="true"
+            />
+
+
+</RelativeLayout>

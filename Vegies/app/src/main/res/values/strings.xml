@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Veggies</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_title">select Area</string>
+
+    <string name="spinner_block_no_title">Block Number</string>
+    <string name="spinner_block_name_title"> Block Name</string>
+
+    <string name="pic_myslf">Pickup myself</string>
+    <string name="cash_delivery">Cash on delivery</string>
+    <string name="pay_online">Pay with online</string>
+    <string name="currency">₹</string>
+
+<!--    <string name="fb_login_protocol_scheme">fb768234862346786</string>-->
+<!--    <string name="facebook_application_id" translatable="false">87982682634669694</string>-->
+
+    <!--  <string name="facebook_app_id">facebook_app_id</string>
+    <string name="fb_login_protocol_scheme">fb_login_protocol_scheme</string>-->
+
+    <string name="area">Select Area</string>
+    <string name="confirm_string">Confirm your Address ?</string>
+
+    <string name="long_string">Stationery is a mass noun referring to commercially manufactured writing materials, including cut paper, envelopes, writing implements, continuous form paper, and other office supplies. Stationery includes materials to be written on by hand or by equipment such as computer printers.</string>
+    <string name="price">$80</string>
+    <string name="new_price">$80/bunch</string>
+    <string name="dicount_str">20% off</string>
+    <string name="order_time">Order Will Accepted between \n 10:00 AM - 05:00PM</string>
+    <string name="address">216 ,Apple squre,Motavarachha,surat</string>
+    <string name="OFS">SORRY! OUT OF STOCK</string>
+    <string name="avialable">Available</string>
+    <string name="place_order">\"Place Order - \"</string>
+    <string name="order_again">Order Again</string>
+    <string name="order_summry">order status</string>
+    <string name="order_title">Your Order</string>
+    <string name="order_short_meg">Order has been Created</string>
+    <string name="order_long_msg">Your order of %sRs has been created and it will
+    soon be accepted</string>
+    <string name="order_not_received">Your Order Has not been Received yet Please Check in order list if there is no order then order it Again and if it is present then no need to order again</string>
+
+    <string name="del_time_exceeds">Delivery Are Closed now</string>
+    <string name="shop_address">1931, American Ash Plaza</string>
+    <string name="email">darpanrajput412@gmail.com</string>
+    <string name="mobile">+91 12345678</string>
+    <string name="about_app"><![CDATA[This Grocery App  Deliver fresh Veggies, Fruits & Healthy Juices to the consumers. As it has observed that to buy vegetables & Fruits from the Local Vendor is very expensive. So we provide a platform for you to buy Quality products at a best price. So that You can Get fresh & Quality products at your door step]]></string>
+    <string name="rate_desc">Giving Feedback and Rating is one of the most important parts of a management teams</string>
+    <string name="copyright">Copyright © Sasti Tech, Inc</string>
+    <string name="call_message">This Will A Make A Call.Charges May Occur</string>
+    <string name="info_permission_denied">Sorry permission denied.We can not open this app on your device, please try again later.</string>
+    <string name="format_request_permision">>%1$s will need to have read/write permission your sdcard to save Files.Do you want to grant it?
+    </string>
+    <string name="dialog_txt">Order Completed Please See The Notification</string>
+    <string-array name="items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7.8</item>
+    </string-array>
+</resources>

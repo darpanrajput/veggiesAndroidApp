@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Veggies Admin</string>
+    <string name="str_dashboard">Dashboard</string>
+    <string name="str_add_category">Add category</string>
+    <string name="category">Category List</string>
+    <string name="str_pending">Pending Order</string>
+    <string name="str_cutomer">Total Customer</string>
+    <string name="str_completed">Delivered Order</string>
+    <string name="str_canceled">Canceled Order</string>
+    <string name="str_feedback">Total Feedback</string>
+    <string name="str_sales">Total Sales</string>
+    <string name="str_deleverd">Total Rejected</string>
+    <string name="str_today">Today\'s order</string>
+
+    <string name="order_summry">order status</string>
+
+    <string name="long_string">Stationery is a mass noun referring to commercially manufactured writing materials, including cut paper, envelopes, writing implements, continuous form paper, and other office supplies. Stationery includes materials to be written on by hand or by equipment such as computer printers.</string>
+    <string name="tag">You Have to Login First</string>
+    <string name="help">If you can not login contact your develop in contact page</string>
+    <string name="email">Enter Your Email</string>
+    <string name="btn_loib_txt">Login</string>
+    <string name="password">Enter Your Password</string>
+    <string name="name">Enter Name</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_status">Select Status</string>
+    <string name="select_type">Product Type</string>
+    <string name="set_delivery_time">Set Delivery Time</string>
+    <string name="id">Id:1265387dffddgf3ajhsdl</string>
+    <string name="address">204,R.A BAZAR Topkhana ,Meerut cantt\n
+        LandMark:Near water tank\n
+        Phone:746576\n
+        email:jhjjdhh@gmal.com\n
+        block Name;A\n
+        block no:G45
+    </string>
+
+
+</resources>

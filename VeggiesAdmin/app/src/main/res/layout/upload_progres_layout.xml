@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_ll">
+        <ImageView
+            android:id="@+id/upload_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_file_qty"
+            android:text="QTY: 1"
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:layout_gravity="right|top"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_file_price"
+            android:text="Cost: Rs 200"
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:layout_gravity="right|top"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_file_name"
+            android:text="file name pf the photo"
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:maxLines="2"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_file_qty_unit"
+            android:text="250 ml of daily milk"
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:maxLines="2"
+
+            />
+
+
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/upload_progress"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_ll">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vegetable" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:text="@string/long_string"
+                android:textColor="@color/black_color"
+                android:textSize="15sp"
+                android:id="@+id/txt_title"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="2"
+                android:id="@+id/txt_desc"
+                android:text="@string/long_string"
+                android:textColor="@color/colorGrey2"
+                android:textSize="12sp"
+                android:ellipsize="end"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorGrey2"
+                android:textSize="12sp"
+                android:id="@+id/stock_left"
+                android:text="Stock left: Nan"
+                android:ellipsize="end"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/txt_unique_pid"
+                    android:text="Unique Item ID:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGrey2"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    />
+
+                <ImageView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/visibility_img"
+                    android:text="Unique Item ID:"
+                    android:textStyle="bold"
+                    android:src="@drawable/ic_visibility_on"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGrey2"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/main_ll"
+        android:background="@color/colorGrey"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/dash_board"
+    android:title="@string/str_dashboard"
+    android:icon="@drawable/ic_baseline_dashboard_24">
+
+</item>
+
+    <item android:id="@+id/grp_category"
+        android:title="Category">
+
+        <menu>
+            <item android:id="@+id/add_category"
+                android:title="@string/str_add_category"
+                android:icon="@drawable/ic_add_new_category" />
+            <item android:id="@+id/category"
+
+                android:title="@string/category"
+                android:icon="@drawable/ic_category"
+                />
+        </menu>
+
+
+    </item>
+
+
+  <!--  <item android:id="@+id/grp_sub_category"
+        android:title="Sub Category">
+
+        <menu>
+
+            <item android:id="@+id/add_sub_category"
+                android:title="Add sub category"
+                android:icon="@drawable/ic_add_new_category"
+                />
+            <item android:id="@+id/sub_category"
+                android:title="sub category list"
+                android:icon="@drawable/ic_sub_category"
+                />
+
+        </menu>
+
+    </item>-->
+
+
+
+
+
+    <item android:id="@+id/grp_product_category"
+        android:title="Product">
+
+        <menu>
+            <item android:id="@+id/add_product"
+                android:title="Add Product"
+                android:icon="@drawable/ic_add_new_category"
+                />
+            <item android:id="@+id/product"
+                android:title="Product list"
+                android:icon="@drawable/ic_product"
+                />
+
+        </menu>
+
+
+    </item>
+
+    <item android:id="@+id/grp_order_category"
+        android:title="Order">
+
+        <menu>
+            <item android:id="@+id/see_oder"
+                android:title="See Order"
+                android:icon="@drawable/ic_add_new_category"
+                />
+
+        </menu>
+
+
+    </item>
+
+    <item android:id="@+id/grp_area"
+        android:title="Area">
+        <menu>
+            <item android:id="@+id/area_block"
+                android:title="Area Block"
+                android:icon="@drawable/ic_area_block"
+                />
+            <item android:id="@+id/area"
+                android:title="Delivery Area"
+                android:icon="@drawable/ic_area"
+                />
+        </menu>
+
+
+    </item>
+
+   <!-- <item android:id="@+id/grp_banner"
+        android:title="Banner">
+        <menu>
+            <item android:id="@+id/add_banner"
+                android:title="Add Banner"
+                android:icon="@drawable/ic_add_new_category"
+                />
+            <item android:id="@+id/banner"
+                android:title="Banner"
+                android:icon="@drawable/ic_banner"
+                />
+        </menu>
+
+    </item>-->
+
+    <item android:id="@+id/grp_other"
+        android:title="Other">
+        <menu>
+            <item android:id="@+id/customer"
+                android:title="Your Customer"
+                android:icon="@drawable/ic_customer"/>
+
+            <item android:id="@+id/notification"
+                android:title="Send Notification"
+                android:icon="@drawable/ic_notification"
+                />
+
+<!--
+            <item android:id="@+id/customer_feedback"
+                android:title="Feedback"
+                android:icon="@drawable/ic_feedback"
+                />-->
+
+            <item android:id="@+id/logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_logout"
+                />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/time"
+        android:title="@string/set_delivery_time"
+        android:icon="@drawable/ic_time">
+
+    </item>
+
+
+
+
+
+</menu>

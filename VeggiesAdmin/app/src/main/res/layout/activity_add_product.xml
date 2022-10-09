@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.product.AddProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/product_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/empty" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="Banana"
+                    android:hint="@string/name"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="@string/long_string"
+                    android:hint="Enter Description"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/edt_unique_pid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="@string/long_string"
+                    android:hint="Enter Item Id"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Unit"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:textSize="15sp"
+                        android:layout_marginStart="10dp"
+                        />
+                    <Spinner
+                        android:id="@+id/unit_spinner"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_option_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="@string/long_string"
+                    android:hint="Enter Options For the Qty"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/option_qty_spinner"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:text="@string/select_category"/>
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/select_category" />
+
+                <EditText
+                    android:id="@+id/edt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="@string/long_string"
+                    android:hint="Product Price"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="0"
+                    android:hint="Enter Discount Amount"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
+               <!-- <EditText
+                    android:id="@+id/edt_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="0"
+                    android:visibility="gone"
+                    android:hint="Enter Product Quantity "
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="15sp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/select_status"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_type"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/status_spinner"
+                        android:layout_weight="1"
+                        android:prompt="@string/select_status"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/type_spinner"
+                        android:prompt="@string/select_type"/>
+                </LinearLayout>
+
+
+
+            <!-- <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Unit"
+                    android:visibility="gone"
+                    android:id="@+id/edt_unit"
+                    android:inputType="text"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:autofillHints="Kg" />-->
+
+                <EditText
+                    android:id="@+id/edt_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Stock Quantity"
+                    android:inputType="number"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:autofillHints="200" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Save"
+                    android:textColor="@color/white_color"
+                    android:id="@+id/save_btn"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
